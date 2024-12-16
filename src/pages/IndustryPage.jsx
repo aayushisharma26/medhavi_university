@@ -118,7 +118,7 @@ return (
 
           <div className="relative h-[400px] lg:h-[500px] mb-80">
             <img
-              src="	https://msu-website-all-objects.s3.ap-south-1.amazonaws.com/from-campus/skill-img.webp"
+              src="	https://www.msu.edu.in/frontend_assets/images/industry-img-page.png"
               alt="Student working with technical equipment"
               className="w-full h-full object-cover rounded-lg"
             />
@@ -201,6 +201,8 @@ return (
     </div>
   );
 }
+
+
 
 
 

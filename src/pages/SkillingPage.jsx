@@ -84,7 +84,7 @@ export default function IndustrySection() {
       </div>
       
       <div className="relative container mx-auto px-4 h-full flex items-center">
-        <h1 className="text-white text-6xl font-bold">Industry</h1>
+        <h1 className="text-white text-6xl font-bold">Skilling</h1>
       </div>
     </div>
 
@@ -94,41 +94,39 @@ export default function IndustrySection() {
 
     {/* <div className="relative min-h-screen bg-white"> */}
      
-      <div className="container mx-auto px-4 py-19 ">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
+    <div className="container mx-auto px-4 py-19 ">
+    <div className="grid lg:grid-cols-2 gap-8 items-center mt-[-400px]">
 
-            <div className="space-y-8 lg:pl-8 mb-40">
-                <p className="text-gray-800 text-2xl leading-loose">
-                Medhavi Skills University has also fostered collaborations with 
-                various sector experts, ensuring that students receive the best 
-                updated expertise and skill set required for the industry. Through 
-                strategic partnerships with renowned institutions, MSU offers 
-                specialized programs designed to meet the evolving demands of 
-                different sectors.
-
-                </p>
-                <p className="text-gray-800 text-2xl leading-loose">
-                By teaming up with sector experts, Medhavi Skills University provides 
-                students with access to industry-relevant curriculum, practical 
-                training, and mentorship opportunities. These partnerships enrich 
-                the learning experience, equipping students with the knowledge and 
-                skills needed to excel in their chosen fields and make meaningful 
-                contributions to the workforce.
-
-                </p>
-                
-            </div>
+    <div className="space-y-8 lg:pl-8 mb-60 pr-[10px]">
+    <p className="text-gray-800 text-lg leading-relaxed">
+        Medhavi Skills University has also fostered collaborations with 
+        various sector experts, ensuring that students receive the best 
+        updated expertise and skill set required for the industry. Through 
+        strategic partnerships with renowned institutions, MSU offers 
+        specialized programs designed to meet the evolving demands of 
+        different sectors.
+    </p>
+    <p className="text-gray-800 text-lg leading-relaxed">
+        By teaming up with sector experts, Medhavi Skills University provides 
+        students with access to industry-relevant curriculum, practical 
+        training, and mentorship opportunities. These partnerships enrich 
+        the learning experience, equipping students with the knowledge and 
+        skills needed to excel in their chosen fields and make meaningful 
+        contributions to the workforce.
+    </p>
+</div>
 
 
-          <div className="relative h-[400px] lg:h-[500px] mb-80">
+        <div className="relative h-[400px] lg:h-[500px] mb-40">
             <img
-              src="https://www.msu.edu.in/frontend_assets/images/industry-img-page.png"
-              alt="Student working with technical equipment"
-              className="w-full h-full object-cover rounded-lg"
+                src="	https://msu-website-all-objects.s3.ap-south-1.amazonaws.com/from-campus/skill-img.webp"
+                alt="Student working with technical equipment"
+                className="w-full h-full object-cover rounded-lg"
             />
-          </div>
         </div>
-      </div>
+    </div>
+</div>
+
 
       <div className="fixed right-0 top-1/2 -translate-y-1/2 bg-[#003366] text-white p-2 rounded-l-lg space-y-4 z-50">
         <button className="p-2 hover:bg-blue-800 rounded transition-colors flex items-center justify-center" aria-label="Message">
@@ -148,7 +146,7 @@ export default function IndustrySection() {
       <section className="py-16 -mt-52 px-4 bg-gray-50">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
-            Industry Collaborations
+            Skilling Partners
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
