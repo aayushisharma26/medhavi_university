@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react';
 
 export default function MainNav() {
   const [isOpen, setIsOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false); // State to toggle dropdown visibility
+  const [dropdownOpen, setDropdownOpen] = useState(false); 
 
   const links = [
     { name: 'About', href: '/about' },
@@ -22,7 +22,7 @@ export default function MainNav() {
           <div className="flex-shrink-0">
             <Link to="/">
               <img
-                src="/placeholder.svg"
+                src="	https://www.msu.edu.in/frontend_assets/images/logo/medhavi-logo.png"
                 alt="Medhavi Skills University"
                 width={200}
                 height={80}

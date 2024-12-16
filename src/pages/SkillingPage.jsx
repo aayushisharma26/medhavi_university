@@ -13,24 +13,12 @@ export default function IndustrySection() {
     { name: "Positive Plastics", logos: ["	https://www.msu.edu.in/frontend_assets/images/industry-partners/holiday-inn.jpg", "	https://www.msu.edu.in/frontend_assets/images/industry-partners/d29-min.jpg"] },
     { name: "IHG Hotels & Resorts", logos: ["https://www.msu.edu.in/frontend_assets/images/industry-partners/d34.jpg","https://www.msu.edu.in/frontend_assets/images/industry-partners/d16.jpg"] },
     { name: "Under Water Solutions", logos: ["	https://www.msu.edu.in/frontend_assets/images/industry-partners/d33-min.jpg" , "https://www.msu.edu.in/frontend_assets/images/industry-partners/d32-min.jpg"] },
-    { name: "Polyplex", logos: ["https://www.msu.edu.in/frontend_assets/images/industry-partners/d30-min.jpg" , "https://www.msu.edu.in/frontend_assets/images/industry-partners/d31-min.jpg"] },
-    { name: "Wise Power", logos: ["	https://www.msu.edu.in/frontend_assets/images/industry-partners/d26-min.jpg" , "https://www.msu.edu.in/frontend_assets/images/industry-partners/d28-min.jpg"] },
-    { name: "Jupiter", logos: ["https://www.msu.edu.in/frontend_assets/images/industry-partners/d24-min.jpg" , "https://www.msu.edu.in/frontend_assets/images/industry-partners/d25-min.jpg"] },
-    { name: "Partner 14", logos: ["https://www.msu.edu.in/frontend_assets/images/industry-partners/d22-min.jpg","	https://www.msu.edu.in/frontend_assets/images/industry-partners/d23-min.jpg"] },
-    { name: "Interarch", logos: ["https://www.msu.edu.in/frontend_assets/images/industry-partners/d21-min.jpg" , "https://www.msu.edu.in/frontend_assets/images/industry-partners/d20-min.jpg"] },
-    { name: "Roop Polymers", logos: ["https://www.msu.edu.in/frontend_assets/images/industry-partners/d18-min.jpg" , "https://www.msu.edu.in/frontend_assets/images/industry-partners/d19-min.jpg"] },
-    { name: "Partner 17", logos: ["https://www.msu.edu.in/frontend_assets/images/industry-partners/d15-min.jpg" , "https://www.msu.edu.in/frontend_assets/images/industry-partners/d17-min.jpg"] },
-    { name: "Tatwa Technologies", logos: ["	https://www.msu.edu.in/frontend_assets/images/industry-partners/d14-min.jpg" , "https://www.msu.edu.in/frontend_assets/images/industry-partners/d13-min.jpg"] },
-    { name: "Lumax", logos: ["https://www.msu.edu.in/frontend_assets/images/industry-partners/d12-min.jpg" , "https://www.msu.edu.in/frontend_assets/images/industry-partners/d11-min.jpg"] },
-    { name: "Cremica", logos: ["https://www.msu.edu.in/frontend_assets/images/industry-partners/d10-min.jpg", "https://www.msu.edu.in/frontend_assets/images/industry-partners/d9-min.jpg"] },
-  ];
+      ];
 
-  // State to store the current logo index for each partner
   const [currentLogos, setCurrentLogos] = useState(
     partners.map((partner) => (partner.logos.length > 1 ? 0 : -1)) // Only cycle for partners with multiple logos
   );
 
-  // Function to update logos every 3 seconds
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentLogos((prevLogos) =>
@@ -40,12 +28,11 @@ export default function IndustrySection() {
             const newIndex = (currentIndex + 1) % partner.logos.length;
             return newIndex;
           }
-          return currentIndex; // Keep the index unchanged for partners with one logo
+          return currentIndex; 
         })
       );
-    }, 3000); // Change logo every 3 seconds
+    }, 3000); 
 
-    // Clear the interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
 
@@ -84,29 +71,52 @@ export default function IndustrySection() {
   ]
 
   return (
-    <div className="relative min-h-screen bg-white">
+    
+<div>
+    <div className="min-h-screen">
+    <div className="relative h-[500px] ">
+      <div className="absolute inset-0 bg-black">
+        <img
+          src="https://msu-website-all-objects.s3.ap-south-1.amazonaws.com/website-images/banner-msu/skilling-msu.webp"
+          alt="Skills background"
+          className="w-full h-full object-cover opacity-70"
+        />
+      </div>
+      
+      <div className="relative container mx-auto px-4 h-full flex items-center">
+        <h1 className="text-white text-6xl font-bold">Industry</h1>
+      </div>
+    </div>
+
+
+  </div>
+
+
+    {/* <div className="relative min-h-screen bg-white"> */}
      
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-19 ">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
 
             <div className="space-y-8 lg:pl-8 mb-40">
                 <p className="text-gray-800 text-2xl leading-loose">
-                    For years, a significant gap has persisted between academia and
-                    industry, leaving graduates ill-equipped for the demands of the
-                    workforce.At Medhavi Skills University, our collaboration with industry
-                    partners aims to bridge this gap effectively.Industry stakeholders actively participate in shaping our curriculum to
-                    align with industry standards, ensuring that students acquire the skills
-                    and knowledge needed for success in the real world.
+                Medhavi Skills University has also fostered collaborations with 
+                various sector experts, ensuring that students receive the best 
+                updated expertise and skill set required for the industry. Through 
+                strategic partnerships with renowned institutions, MSU offers 
+                specialized programs designed to meet the evolving demands of 
+                different sectors.
+
                 </p>
                 <p className="text-gray-800 text-2xl leading-loose">
-                    At Medhavi Skills University, our collaboration with industry 
-                    partners aims to bridge this gap effectively.
+                By teaming up with sector experts, Medhavi Skills University provides 
+                students with access to industry-relevant curriculum, practical 
+                training, and mentorship opportunities. These partnerships enrich 
+                the learning experience, equipping students with the knowledge and 
+                skills needed to excel in their chosen fields and make meaningful 
+                contributions to the workforce.
+
                 </p>
-                <p className="text-gray-800 text-2xl leading-loose">
-                    Industry stakeholders actively participate in shaping our curriculum to
-                    align with industry standards, ensuring that students acquire the skills
-                    and knowledge needed for success in the real world.
-                </p>
+                
             </div>
 
 
@@ -160,12 +170,6 @@ export default function IndustrySection() {
 
 
 
-
-
-
-
-
-
       <div className="max-w-7xl mx-auto p-6 relative z-10 mt-[0px] h-[335px]">
       <div className="border-2 border-[#F39C12] rounded-3xl p-8 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
@@ -198,10 +202,14 @@ export default function IndustrySection() {
       </div>
     </div>
 
+
+
+
+
+
+
     
     </div>
+    // </div>
   );
 }
-
-
-
